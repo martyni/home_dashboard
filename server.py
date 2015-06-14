@@ -68,5 +68,5 @@ def get_last():
   last = my_db.last_40()
   return last
 
-if __name__ = "__main__":
+if __name__ == "__main__":
    bottle.run(host='localhost', port=8080)
