@@ -2,7 +2,7 @@ import bottle
 import sys
 import os
 import json
-sys.path.insert(0, '/home/martyni/bottlesite')
+#sys.path.insert(0, '/home/martyni/bottlesite')
 
 from update import speed_project
 from static import default
@@ -35,12 +35,8 @@ def get_average_day():
    return report
 
 @bottle.route('/')
-def thing():
-   return os.path.abspath('./')
- 
-@bottle.route('/static')
-def templ():
-   return bottle.template(default)
+def home():
+  return bottle.template(default)
 
 @bottle.route('/mystyle.css')
 def style():
