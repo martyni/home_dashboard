@@ -2,6 +2,7 @@ import bottle
 import sys
 import os
 import json
+import requests
 
 from update import speed_project
 from static import default
@@ -69,4 +70,6 @@ def get_last():
   return last
 
 if __name__ == "__main__":
-   bottle.run(host='localhost', port=8080)
+   #hack to run server on ip dynamically
+   address = requests.get('http://ipv4.icanhazip.com').content
+   bottle.run(host=address, port=8080)
