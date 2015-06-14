@@ -2,7 +2,6 @@ import bottle
 import sys
 import os
 import json
-#sys.path.insert(0, '/home/martyni/bottlesite')
 
 from update import speed_project
 from static import default
@@ -69,3 +68,5 @@ def get_last():
   last = my_db.last_40()
   return last
 
+if __name__ = "__main__":
+   bottle.run(host='localhost', port=8080)
