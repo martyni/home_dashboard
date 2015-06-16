@@ -25,6 +25,7 @@ text-color:white;
 a:link {
 text-decoration:none;
 color:white;
+
 }
 
 
@@ -32,6 +33,7 @@ a:hover {
   font-size:101%;
   color:white ;
   text-shadow:none;
+  text-decoration:underline;
 }
 a:visited {
 

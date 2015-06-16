@@ -50,9 +50,6 @@ def deal_with_it():
    obj_id = my_db.update_speed(d) 
    return str(obj_id)
 
-@bottle.route('/static/<filepath:path>')
-def serve_static(filepath):
-   return bottle.static_file(filepath, root='/home/martyni')
 
 @bottle.get('/mongo')
 def get_stuff():
